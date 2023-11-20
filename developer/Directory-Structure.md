@@ -1,7 +1,5 @@
 # Directory Structure
 
-## Introduction
-
 The structure of the project follows the default [Laravel 10.x application structure](https://laravel.com/docs/10.x/structure). 
 
 ## Casts
