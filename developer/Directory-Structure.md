@@ -72,4 +72,3 @@ Contains feature tests, which run only within the application context.
 Path: `tests/Unit`
 
 Contains unit tests, which test application-independent pieces of code, such as general computer algorithms.
-
