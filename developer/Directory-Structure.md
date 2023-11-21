@@ -1,6 +1,6 @@
 # Directory Structure
 
-The structure of the project follows the default [Laravel 10.x application structure](https://laravel.com/docs/10.x/structure). 
+The structure of the project follows the default [Laravel 10.x application structure](https://laravel.com/docs/10.x/structure).
 
 ## Casts
 
@@ -19,6 +19,12 @@ Subdirectories:
 - **Actions** - Contains custom filament actions.
 - **Resources** - Contains Filament resources and components for the Filament admin panel.
 
+## Helpers
+
+Path: `app/Helpers`
+
+Contains helper functions.
+
 ## Models
 
 Path: `app/Models`
@@ -27,7 +33,7 @@ Contains Eloquent model classes representing database tables.
 
 Subdirectories: 
 
-- **Listeners** - Contains traits which [register closures](https://laravel.com/docs/10.x/eloquent#events-using-closures) that execute when various model events are dispatched. 
+- **Listeners** - Contains traits which [register closures](https://laravel.com/docs/10.x/eloquent#events-using-closures) that execute when various model events are dispatched.
 - **Relationships** - Contains traits which define [relationships](https://laravel.com/docs/10.x/eloquent-relationships) and provide associated attributes, [local scopes](https://laravel.com/docs/10.x/eloquent#local-scopes), and methods to models.
 - **Scopes** - Contains [global scopes](https://laravel.com/docs/10.x/eloquent#global-scopes).
 
@@ -65,4 +71,4 @@ Contains feature tests, which run only within the application context.
 
 Path: `tests/Unit`
 
-Contains unit tests, which test application-independent pieces of code, such as general computer algorithms. 
+Contains unit tests, which test application-independent pieces of code, such as general computer algorithms.
