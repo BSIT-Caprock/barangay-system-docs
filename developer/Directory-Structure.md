@@ -14,7 +14,7 @@ Path: `app/Filament`
 
 Contains resources and components for the Filament admin panel.
 
-Subdirectories: 
+Subdirectories:
 
 - **Actions** - Contains custom filament actions.
 - **Resources** - Contains Filament resources and components for the Filament admin panel.
@@ -31,7 +31,7 @@ Path: `app/Models`
 
 Contains Eloquent model classes representing database tables.
 
-Subdirectories: 
+Subdirectories:
 
 - **Listeners** - Contains traits which [register closures](https://laravel.com/docs/10.x/eloquent#events-using-closures) that execute when various model events are dispatched.
 - **Relationships** - Contains traits which define [relationships](https://laravel.com/docs/10.x/eloquent-relationships) and provide associated attributes, [local scopes](https://laravel.com/docs/10.x/eloquent#local-scopes), and methods to models.
