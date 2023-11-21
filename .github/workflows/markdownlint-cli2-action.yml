@@ -1,29 +1,27 @@
 name: markdownlint
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
   pull_request:
-    # branches: [ "main" ]
+    branches:
+      - "main"
 
-  # Allows you to run this workflow manually from the Actions tab
+    paths:
+      - "**/*.md"
+
   workflow_dispatch:
+    inputs:
+      paths:
+        default: "**/*.md"
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  lint:
-    name: Lint markdown documents
-    # The type of runner that the job will run on
+  markdownlint:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      # A GitHub Action to run the markdownlint-cli2 tool for linting Markdown/CommonMark files with the markdownlint library
-      - uses: DavidAnson/markdownlint-cli2-action@v13
+      - name: Checkout code 
+        uses: actions/checkout@v3
+
+      - name: Lint Markdown files
+        uses: DavidAnson/markdownlint-cli2-action@v13
         with:
           globs: |
             *.md
